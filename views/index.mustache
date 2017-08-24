@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Coin Collection</title>
+</head>
+
+<body>
+    <header>Coin Collection</header>
+    <a href="/edit/{{id}}">Edit</a>
+    <ul>
+          {{#Coin}}
+              <li>
+                {{name}}<a href="/{{id}}">Read More</a>
+              </li>
+          {{/Coin}}
+    </ul>
+
+    <form method="POST" id="form" class="topBefore" action="/">
+
+    <label>Name<input id="name" type="text" placeholder="NAME" name="name">
+    <label>Year<input id="date" type="number" placeholder="DATE" name="year">
+    <label>State<input id="state" type="text" placeholder="STATE" name="state">
+    <label>Country<input id="country" type="text" placeholder="COUNTRY" name="country">   
+    <label> <textarea type="text" rows="1" id="comment" placeholder="Description" name="description"></textarea>
+    <input id="submit" type="submit" value="GO!">
+
+    </form>
+</body>
+
+</html>

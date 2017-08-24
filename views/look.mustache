@@ -1,0 +1,29 @@
+<html>
+
+<head>
+ 
+
+</head>
+
+<body>
+    view coin
+    <a href="/">view all</a> {{#Coin}}
+    <div class="coin_view">
+        Name: {{name}} Year: {{year}}
+        <!-- {{#location}} -->
+        From: {{state}}, {{country}}
+        <!-- {{/location}} -->
+        Details: {{description}}
+    </div>
+    <div>
+        <a href="/edit/{{id}}">Edit</a>
+    </div>
+    {{/Coin}}
+    <!-- <a href="/edit/{{id}}">edit</a> -->
+    <!-- <form action="/edit/{{id}}" method='post'>
+            
+            </form> -->
+
+</body>
+
+</html>
